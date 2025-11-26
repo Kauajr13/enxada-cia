@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20366428238befebe9044ad0fcbb9c94, type: 3}
+  m_Name: Abobora
+  m_EditorClassIdentifier: 
+  nomeDaPlanta: Abobora
+  corCrescendo: {r: 0.5054383, g: 0.7221452, b: 0.028782606, a: 0}
+  corSedenta: {r: 0.39215687, g: 0.39215687, b: 1, a: 0}
+  corMadura: {r: 1, g: 0.4, b: 0, a: 1}
+  tempoParaCrescer: 15
+  tempoDeSede: 10
+  valorDeVenda: 40
+  precoParaDesbloquear: 100

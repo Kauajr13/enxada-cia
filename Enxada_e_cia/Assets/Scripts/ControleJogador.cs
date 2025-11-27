@@ -1,43 +1,65 @@
 using UnityEngine;
+using System.Collections;
 
 public class ControleJogador : MonoBehaviour
 {
-    [Header("Movimentação")]
+    [Header("Modelos 3D (Sistema de Dublê)")]
+    public GameObject modeloAndando; // Arraste aqui o boneco que anda
+    public GameObject modeloAcao;    // Arraste aqui o boneco que colhe
+
+    [Header("Configurações")]
     public float velocidade = 5.0f;
     public float velocidadeGiro = 50.0f;
+    public float raioDoSensor = 0.4f;
+    public float distanciaDoSensor = 0.4f;
 
-    [Header("Interação")]
-    [Range(0.1f, 1.0f)] 
-    public float raioDoSensor = 0.3f; // DIMINUI O TAMANHO DA BOLHA (Mais preciso)
-    public float distanciaDoSensor = 0.5f; // Distância do corpo
-
-    [Header("Inventário de Sementes")]
+    [Header("Inventário")]
     public DadosDaPlanta[] sementesDisponiveis;
     public bool[] sementesDesbloqueadas;
     private int indiceSelecionado = 0;
+    
+    [Header("Interface")]
+    public HotbarUI hotbarVisual;
 
     private Rigidbody rb;
     private Transform cameraTransform;
-    [Header("Interface")]
-    public HotbarUI hotbarVisual; // Arraste o script da UI aqui
+    
+    // Animadores separados para cada modelo
+    private Animator animAndar; 
+    private Animator animAcao; 
+    
+    private bool estaTrabalhando = false; // Trava o movimento
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         if (Camera.main != null) cameraTransform = Camera.main.transform;
 
-        // --- NOVO CÓDIGO ---
-        if (hotbarVisual != null)
+        // CONFIGURAÇÃO DOS DUBLÊS
+        if (modeloAndando != null) 
         {
-            // Manda as sementes (Milho/Tomate/Abobora) pra UI pintar os ícones
+            animAndar = modeloAndando.GetComponent<Animator>();
+            modeloAndando.SetActive(true); // Começa visível
+        }
+
+        if (modeloAcao != null)
+        {
+            animAcao = modeloAcao.GetComponent<Animator>();
+            modeloAcao.SetActive(false); // Começa escondido
+        }
+
+        // Inicializa UI
+        if (hotbarVisual != null && sementesDisponiveis.Length > 0)
+        {
             hotbarVisual.Inicializar(sementesDisponiveis);
-            // Já seleciona o primeiro
             hotbarVisual.AtualizarSelecao(0);
         }
     }
 
     void Update()
     {
+        if (estaTrabalhando) return; // Se está trabalhando, não obedece WASD
+
         Mover();
         TrocarSemente();
         
@@ -47,47 +69,16 @@ public class ControleJogador : MonoBehaviour
         }
     }
 
-    void TrocarSemente()
-    {
-        // Só troca se o índice existir E estiver desbloqueado
-        if (Input.GetKeyDown(KeyCode.Alpha1)) TentarTrocar(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) TentarTrocar(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) TentarTrocar(2);
-    }
-
-    void TentarTrocar(int index)
-    {
-        // Proteção para não dar erro se configurar errado no Inspector
-        if (index >= sementesDesbloqueadas.Length) return;
-
-        if (sementesDesbloqueadas[index] == true)
-        {
-            indiceSelecionado = index;
-            if(hotbarVisual != null) hotbarVisual.AtualizarSelecao(index);
-            Debug.Log("Equipou: " + sementesDisponiveis[index].nomeDaPlanta);
-        }
-        else
-        {
-            Debug.Log("Semente Bloqueada! Compre na loja.");
-            // Opcional: Tocar som de "Erro/Negado"
-        }
-    }
-
-    public void DesbloquearSemente(int index)
-    {
-        if (index < sementesDesbloqueadas.Length)
-        {
-            sementesDesbloqueadas[index] = true;
-            Debug.Log("Nova semente aprendida!");
-        }
-    }
-
     void Mover()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
 
-        if (x == 0 && z == 0) return;
+        // Animação de Andar (apenas no modelo de andar)
+        bool andando = (x != 0 || z != 0);
+        if (animAndar != null) animAndar.SetBool("Andando", andando);
+
+        if (!andando) return;
 
         Vector3 camFrente = cameraTransform.forward;
         Vector3 camDireita = cameraTransform.right;
@@ -102,75 +93,97 @@ public class ControleJogador : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, rotacaoAlvo, Time.deltaTime * velocidadeGiro);
     }
 
-    // --- A CORREÇÃO DE ALTURA ESTÁ AQUI ---
-    Vector3 CalcularPosicaoDoSensor()
-    {
-        // 1. Pega a posição do pé do jogador
-        Vector3 posicao = transform.position;
-        
-        // 2. FORÇA a altura para ser quase no chão (0.2 metros)
-        // Isso ignora se o personagem é gigante ou anão. O sensor sempre vai raspar o chão.
-        posicao.y = 0.2f; 
-
-        // 3. Projeta para frente
-        return posicao + (transform.forward * distanciaDoSensor);
-    }
-
     void Interagir()
     {
-        Vector3 centroDaBolha = CalcularPosicaoDoSensor();
-        Collider[] objetosTocados = Physics.OverlapSphere(centroDaBolha, raioDoSensor);
+        Vector3 centro = CalcularPosicaoDoSensor();
+        Collider[] hits = Physics.OverlapSphere(centro, raioDoSensor);
 
-        foreach (Collider colisor in objetosTocados)
+        foreach (Collider hit in hits)
         {
-            // 1. Tenta ver se é um LADRILHO (Prioridade)
-            Ladrilho planta = colisor.GetComponent<Ladrilho>();
+            // 1. LADRILHO (Lógica da Troca de Boneco)
+            Ladrilho planta = hit.GetComponent<Ladrilho>();
             if (planta != null)
             {
-                if (sementesDisponiveis.Length > 0 && indiceSelecionado < sementesDisponiveis.Length)
-                    planta.Interagir(sementesDisponiveis[indiceSelecionado]);
-                else
-                    planta.Interagir(null);
+                int acao = planta.ObterTipoDeAcao(); // 1=Trabalhar, 2=Colher
+                StartCoroutine(ExecutarAcaoComDuble(acao, planta));
                 return;
             }
 
-            // 2. Se não for planta, vê se é uma PLACA DE VENDA
-            PlacaDeVenda placa = colisor.GetComponent<PlacaDeVenda>();
-            if (placa != null)
-            {
-                placa.TentarComprar();
-                return;
-            }
-
-            // 3. Também pode ser a loja de sementes
-            LojaSementes loja = colisor.GetComponent<LojaSementes>();
-            if (loja != null)
-            {
-                loja.TentarComprar();
-                return;
-            }
-
-            // 4. TOTEM DA CHUVA (NOVO!)
-            TotemChuva totem = colisor.GetComponent<TotemChuva>();
-            if (totem != null)
-            {
-                totem.TentarAtivar();
-                return;
-            }
+            // Outras interações (Loja, Placa, Totem)...
+             PlacaDeVenda placa = hit.GetComponent<PlacaDeVenda>();
+             if (placa != null) { placa.TentarComprar(); return; }
+             LojaSementes loja = hit.GetComponent<LojaSementes>();
+             if (loja != null) { loja.TentarComprar(); return; }
+             TotemChuva totem = hit.GetComponent<TotemChuva>();
+             if (totem != null) { totem.TentarAtivar(); return; }
         }
     }
 
-    void OnDrawGizmos()
+    // --- A MÁGICA DA TROCA ---
+    IEnumerator ExecutarAcaoComDuble(int tipoAcao, Ladrilho planta)
     {
-        Gizmos.color = Color.yellow;
-        // Usa a mesma matemática para você ver exatamente onde está batendo
-        // Como o script roda no editor, precisamos recalcular aqui manualmente
-        if (transform != null) 
+        estaTrabalhando = true; // Trava WASD
+
+        // 1. ESCONDE O ANDARILHO, MOSTRA O TRABALHADOR
+        if (modeloAndando != null) modeloAndando.SetActive(false);
+        if (modeloAcao != null) modeloAcao.SetActive(true);
+
+        // Espera 1 frame para o Unity acordar o Animator do novo boneco
+        yield return null; 
+
+        // 2. TOCA A ANIMAÇÃO
+        if (animAcao != null)
         {
-             Vector3 posicao = transform.position;
-             posicao.y = 0.2f; // Forçando chão no visual também
-             Vector3 centro = posicao + (transform.forward * distanciaDoSensor);
-             Gizmos.DrawWireSphere(centro, raioDoSensor);
+            if (tipoAcao == 1) animAcao.SetTrigger("TrigTrabalhar");
+            if (tipoAcao == 2) animAcao.SetTrigger("TrigColher");
+        }
+
+        // 3. ESPERA O TEMPO DA ANIMAÇÃO (Ajuste esse 1.5f se precisar)
+        yield return new WaitForSeconds(0.6f);
+
+        // 4. EFEITO NA PLANTA (Nascer/Colher)
+        if (sementesDisponiveis.Length > 0 && indiceSelecionado < sementesDisponiveis.Length)
+             planta.Interagir(sementesDisponiveis[indiceSelecionado]);
+        else
+             planta.Interagir(null);
+
+        // 5. DESTROCA (Volta ao normal)
+        if (modeloAcao != null) modeloAcao.SetActive(false);
+        if (modeloAndando != null) modeloAndando.SetActive(true);
+        
+        estaTrabalhando = false; // Destrava WASD
+    }
+
+    void TrocarSemente()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) TentarTrocar(0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) TentarTrocar(1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) TentarTrocar(2);
+    }
+
+    void TentarTrocar(int index)
+    {
+        if (index < sementesDesbloqueadas.Length && sementesDesbloqueadas[index])
+        {
+            indiceSelecionado = index;
+            if(hotbarVisual != null) hotbarVisual.AtualizarSelecao(index);
+        }
+    }
+    
+    public void DesbloquearSemente(int index) { 
+        if(index < sementesDesbloqueadas.Length) sementesDesbloqueadas[index] = true; 
+    }
+
+    Vector3 CalcularPosicaoDoSensor() {
+        Vector3 p = transform.position; p.y = 0.2f;
+        return p + (transform.forward * distanciaDoSensor);
+    }
+    
+    void OnDrawGizmos() {
+        Gizmos.color = Color.yellow;
+        if(transform != null) {
+            Vector3 p = transform.position; p.y = 0.2f;
+            Gizmos.DrawWireSphere(p + transform.forward * distanciaDoSensor, raioDoSensor);
         }
     }
 }

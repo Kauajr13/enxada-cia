@@ -2,23 +2,20 @@ using UnityEngine;
 
 public class OlharParaCamera : MonoBehaviour
 {
-    private Camera cameraPrincipal;
+    private Camera cam;
 
     void Start()
     {
-        // Encontra a câmera principal automaticamente
-        cameraPrincipal = Camera.main;
+        cam = Camera.main;
     }
 
-    // Usamos LateUpdate para garantir que o texto gire SÓ DEPOIS 
-    // que a câmera terminar de se mover (evita tremedeira visual)
     void LateUpdate()
     {
-        if (cameraPrincipal != null)
+        if (cam != null)
         {
-            // O Truque: Em vez de "olhar para" a câmera (o que inverteria o texto),
-            // nós copiamos a rotação dela. Assim o texto fica "chapado" na tela.
-            transform.rotation = cameraPrincipal.transform.rotation;
+            // Força o objeto a olhar na mesma direção que a câmera olha
+            // Isso previne rotações estranhas de cabeça para baixo
+            transform.rotation = cam.transform.rotation;
         }
     }
 }

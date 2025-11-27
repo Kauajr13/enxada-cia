@@ -1,0 +1,289 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1764194107704028, "dur":113, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107704228, "dur":18151, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107722450, "dur":240, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107722715, "dur":3202, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107725919, "dur":32414, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107758468, "dur":391, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1764194107722554, "dur":3371, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1764194107726002, "dur":73, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport" }}
+,{ "pid":12345, "tid":1, "ts":1764194107726075, "dur":65, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_player_nondevelopment_mono/Data/MonoBleedingEdge" }}
+,{ "pid":12345, "tid":1, "ts":1764194107726150, "dur":130, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/BuildPipeline" }}
+,{ "pid":12345, "tid":1, "ts":1764194107726281, "dur":854, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/il2cpp/build/deploy" }}
+,{ "pid":12345, "tid":1, "ts":1764194107727136, "dur":2236, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/il2cpp/libil2cpp" }}
+,{ "pid":12345, "tid":1, "ts":1764194107725927, "dur":3497, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1764194107729425, "dur":1185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/Enxada_e_cia/Library/Bee/artifacts/unitylinker_1ofc.traceevents" }}
+,{ "pid":12345, "tid":1, "ts":1764194107730610, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1764194107731432, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107731431, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107731819, "dur":331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732202, "dur":310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732565, "dur":129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732696, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732695, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732774, "dur":73, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1764194107732850, "dur":165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733017, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733016, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733093, "dur":193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733325, "dur":132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733534, "dur":399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733936, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107733935, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734016, "dur":225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734242, "dur":180, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734241, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734465, "dur":392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734865, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734858, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107734990, "dur":272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107735263, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107735262, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107735373, "dur":263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107735673, "dur":52, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1764194107735728, "dur":455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107736190, "dur":1169, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107736189, "dur":1171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107737376, "dur":14425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1764194107751802, "dur":6527, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107722579, "dur":3352, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107725934, "dur":314, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107726248, "dur":217, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107726465, "dur":251, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107726744, "dur":2683, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107729456, "dur":63, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_16d3.info" }}
+,{ "pid":12345, "tid":2, "ts":1764194107729521, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/LinuxPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1764194107729850, "dur":1585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107731674, "dur":186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107731907, "dur":121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107732030, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107732030, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107732182, "dur":531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107732715, "dur":652, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107732714, "dur":653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735171, "dur":63, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1764194107733431, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735247, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735246, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735352, "dur":255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735639, "dur":157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735834, "dur":122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735957, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107735957, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736046, "dur":238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736317, "dur":149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736497, "dur":142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736641, "dur":207, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736640, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107736863, "dur":470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107737379, "dur":4573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742003, "dur":148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742153, "dur":155, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742152, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742323, "dur":352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742677, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742676, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107742774, "dur":236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107743046, "dur":145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1764194107743192, "dur":15156, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107722579, "dur":3362, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107725945, "dur":255, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107726201, "dur":175, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107726376, "dur":184, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107726560, "dur":172, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107726732, "dur":2699, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107729501, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel.x86_64" }}
+,{ "pid":12345, "tid":3, "ts":1764194107729761, "dur":1679, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107731696, "dur":180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107731960, "dur":157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107732158, "dur":639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107732828, "dur":693, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107733523, "dur":299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734073, "dur":147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734288, "dur":180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734512, "dur":124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734638, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734637, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734704, "dur":179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734885, "dur":86, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734884, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107734984, "dur":234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107735269, "dur":151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107735459, "dur":656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736117, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736116, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736184, "dur":188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736408, "dur":118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736527, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107736590, "dur":347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107737031, "dur":222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107737254, "dur":234, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107737253, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107741926, "dur":54, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1764194107737503, "dur":4488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107741993, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107741992, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742073, "dur":213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742331, "dur":128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742503, "dur":137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742683, "dur":122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742810, "dur":526, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107742809, "dur":528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107743351, "dur":3257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1764194107746610, "dur":11780, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107722640, "dur":3310, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107725952, "dur":406, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107726359, "dur":147, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107726506, "dur":246, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107726753, "dur":2675, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107729531, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107729730, "dur":1703, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1764194107731440, "dur":1757, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107731435, "dur":1763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107733219, "dur":3768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107737034, "dur":154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107737190, "dur":338, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107737189, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107737541, "dur":4426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107742006, "dur":159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107742167, "dur":180, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107742166, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107742361, "dur":416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107742814, "dur":131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107743015, "dur":196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1764194107743212, "dur":15122, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107722651, "dur":3307, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107725961, "dur":261, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107726223, "dur":402, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107726626, "dur":154, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107726780, "dur":2655, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107729505, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107729631, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107729774, "dur":1667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107731458, "dur":322, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107731442, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107731799, "dur":541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107732342, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107732341, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107732410, "dur":203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107732774, "dur":633, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107732650, "dur":768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107733462, "dur":480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107733999, "dur":153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107734201, "dur":58, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1764194107734262, "dur":185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107734449, "dur":1021, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107734448, "dur":1023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107735487, "dur":7923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1764194107743411, "dur":14948, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107722677, "dur":3294, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107725973, "dur":176, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107726150, "dur":355, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107726506, "dur":273, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107726779, "dur":2650, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107729447, "dur":65, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1764194107729513, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/UnityPlayer.so" }}
+,{ "pid":12345, "tid":6, "ts":1764194107729691, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107729749, "dur":1685, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107731438, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107731436, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107732317, "dur":525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107732844, "dur":79, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107732843, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107732948, "dur":222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107733172, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107733171, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107733320, "dur":291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107733664, "dur":184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107733944, "dur":169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107734153, "dur":127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107734281, "dur":157, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107734281, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107734446, "dur":246, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107734695, "dur":398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107735301, "dur":265, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1764194107735153, "dur":424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107735579, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107735578, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107735687, "dur":356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107736084, "dur":146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107736233, "dur":610, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107736231, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107736858, "dur":5144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742054, "dur":153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742241, "dur":148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742391, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742390, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742477, "dur":209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742688, "dur":1204, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107742687, "dur":1206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107743909, "dur":7898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1764194107751813, "dur":6523, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107722676, "dur":3289, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107725966, "dur":411, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107726377, "dur":392, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107726769, "dur":2670, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107729538, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107729676, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107729736, "dur":1703, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1764194107731443, "dur":203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107731439, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107731674, "dur":328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107732053, "dur":127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107732219, "dur":229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107732450, "dur":2440, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107732449, "dur":2442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1764194107734906, "dur":23398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107722701, "dur":3275, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107725977, "dur":240, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107726218, "dur":257, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107726476, "dur":294, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107726770, "dur":2664, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107729439, "dur":60, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1764194107729500, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/libdecor-0.so.0" }}
+,{ "pid":12345, "tid":8, "ts":1764194107729607, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107729673, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107729796, "dur":1641, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107731443, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107731438, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107731941, "dur":153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107732153, "dur":161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107732350, "dur":140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107732491, "dur":304, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107732491, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107732809, "dur":584, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107733438, "dur":188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107733674, "dur":158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734061, "dur":104, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107733940, "dur":235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734177, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734176, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734244, "dur":245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734528, "dur":127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734656, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734655, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735056, "dur":80, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107734784, "dur":361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735188, "dur":132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735377, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735591, "dur":108, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735442, "dur":268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735711, "dur":163, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735711, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107735889, "dur":363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107736297, "dur":143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107736483, "dur":158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107736681, "dur":267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107736993, "dur":175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737170, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737169, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737248, "dur":198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737448, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737447, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107737535, "dur":4424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107741961, "dur":1009, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/ManagedStripped/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107741960, "dur":1011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107742986, "dur":9671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/jiraiya23/rea de Trabalho/Unity/enxada-cia/executavel_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1764194107752658, "dur":5745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1764194107762405, "dur":306, "ph":"X", "name": "ProfilerWriteOutput" }
+,

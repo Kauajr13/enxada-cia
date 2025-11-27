@@ -12,7 +12,7 @@ public class Ladrilho : MonoBehaviour
     // Esta variável vai guardar a ficha (Milho/Tomate) que o jogador escolheu
     private DadosDaPlanta dadosAtuais; 
     
-    private Renderer meuRenderizador;
+
     private Coroutine rotinaCrescimento;
     private Vector3 escalaOriginal;
 
@@ -20,14 +20,16 @@ public class Ladrilho : MonoBehaviour
     public AudioClip somPlantar;
     public AudioClip somRegar;
     public AudioClip somColher;
+    [Header("3D")]
+    private GameObject plantaVisualInstanciada;
+
+    [Header("Visual")]
+    public GameObject prefabGotaSede; // Arraste o prefab da Gota aqui
+    private GameObject gotaInstanciada;
 
     void Start()
     {
-        meuRenderizador = GetComponent<Renderer>();
         escalaOriginal = transform.localScale; 
-        
-        // Garante que começa branco
-        meuRenderizador.material.color = Color.white;
     }
 
     // --- FUNÇÃO DE INTERAÇÃO (Chamada pelo Jogador) ---
@@ -59,22 +61,34 @@ public class Ladrilho : MonoBehaviour
         }
     }
 
+    // Função Auxiliar para limpar o modelo antigo e criar o novo
+    void AtualizarModeloVisual(GameObject novoPrefab, float alturaExtra = 0f)
+    {
+        // 1. Apaga o modelo anterior (se existir)
+        if (plantaVisualInstanciada != null) Destroy(plantaVisualInstanciada);
+
+        // 2. Cria o novo modelo (se a ficha tiver um)
+        if (novoPrefab != null)
+        {
+            Vector3 pos = transform.position + Vector3.up * alturaExtra;
+            plantaVisualInstanciada = Instantiate(novoPrefab, pos, Quaternion.identity);
+            plantaVisualInstanciada.transform.SetParent(transform);
+        }
+    }
+
     IEnumerator CicloDeVida()
     {
         estadoAtual = EstadoDaPlanta.Crescendo;
         
-        if (somPlantar != null) 
-            AudioSource.PlayClipAtPoint(somPlantar, transform.position);
-
-        // Usa a cor da ficha da planta
-        meuRenderizador.material.color = dadosAtuais.corCrescendo;
+        // VISUAL: Mostra o brotinho (modeloCrescendo)
+        // Se não tiver modelo, usa a cor antiga como fallback
+        if (dadosAtuais.modeloCrescendo != null)
+            AtualizarModeloVisual(dadosAtuais.modeloCrescendo);
         
-        // Espera metade do tempo definido na ficha
         yield return new WaitForSeconds(dadosAtuais.tempoParaCrescer / 2);
 
         EntrarEstadoSedento();
         
-        // Espera o tempo de sede definido na ficha
         yield return new WaitForSeconds(dadosAtuais.tempoDeSede);
 
         FicarMaduro();
@@ -85,11 +99,11 @@ public class Ladrilho : MonoBehaviour
         if (estadoAtual == EstadoDaPlanta.Crescendo)
         {
             estadoAtual = EstadoDaPlanta.Sedento;
-            // Usa a cor de sede da ficha (ou azul padrão se esquecer de configurar)
-            if(dadosAtuais.corSedenta != Color.clear)
-                meuRenderizador.material.color = dadosAtuais.corSedenta;
-            else
-                meuRenderizador.material.color = Color.blue;
+            if (prefabGotaSede != null)
+            {
+                Vector3 posGota = transform.position + Vector3.up * 1.5f;
+                gotaInstanciada = Instantiate(prefabGotaSede, posGota, Quaternion.identity);
+            }
         }
     }
 
@@ -98,7 +112,7 @@ public class Ladrilho : MonoBehaviour
         // TOCA O SOM DE REGAR
         if (somRegar != null) 
             AudioSource.PlayClipAtPoint(somRegar, transform.position);
-        Debug.Log("Regado!");
+        if (gotaInstanciada != null) Destroy(gotaInstanciada);
         StopCoroutine(rotinaCrescimento);
         FicarMaduro();
     }
@@ -106,7 +120,12 @@ public class Ladrilho : MonoBehaviour
     void FicarMaduro()
     {
         estadoAtual = EstadoDaPlanta.Maduro;
-        meuRenderizador.material.color = dadosAtuais.corMadura;
+        if (gotaInstanciada != null) Destroy(gotaInstanciada);
+        // VISUAL: Troca o brotinho pela planta adulta (modeloVisual)
+        // Ajuste o 0.0f se precisar subir a planta
+        AtualizarModeloVisual(dadosAtuais.modeloVisual, 0.0f); 
+
+
         StartCoroutine(AnimacaoPop());
     }
 
@@ -130,8 +149,11 @@ public class Ladrilho : MonoBehaviour
         // --------------------
 
         if (particulaColheitaPrefab != null) Instantiate(particulaColheitaPrefab, transform.position, Quaternion.identity);
+        if (plantaVisualInstanciada != null)
+        {
+            Destroy(plantaVisualInstanciada);
+        }
 
-        meuRenderizador.material.color = Color.white;
         dadosAtuais = null;
     }
 
@@ -149,6 +171,21 @@ public class Ladrilho : MonoBehaviour
         {
             RegarPlanta();
         }
+    }
+
+    // O Jogador pergunta: "O que eu posso fazer aqui?"
+    // Retorna: 0=Nada, 1=Plantar/Regar, 2=Colher
+    public int ObterTipoDeAcao()
+    {
+        if (estadoAtual == EstadoDaPlanta.Vazio || estadoAtual == EstadoDaPlanta.Sedento)
+        {
+            return 1; // Animação de "Trabalhar" (Enxada)
+        }
+        else if (estadoAtual == EstadoDaPlanta.Maduro)
+        {
+            return 2; // Animação de "Colher" (Gathering)
+        }
+        return 0;
     }
 }
 

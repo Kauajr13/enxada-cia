@@ -373,6 +373,7 @@
 -r:"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 -r:"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@1e5e48aff19d/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@1e5e48aff19d/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@1e5e48aff19d/Lib/Editor/log4netPlastic.dll"

@@ -18,8 +18,22 @@ public class HotbarUI : MonoBehaviour
         {
             if (i < sementes.Length)
             {
-                // Pega a cor "Madura" da planta para usar como ícone
-                iconesDasSementes[i].color = sementes[i].corMadura;
+                if (sementes[i].iconeUI != null)
+                {
+                    iconesDasSementes[i].sprite = sementes[i].iconeUI;
+                    
+                    // 2. Reseta a tinta para Branco (para ver as cores reais do desenho)
+                    iconesDasSementes[i].color = Color.white;
+                    
+                    // 3. Garante que está visível (Alpha 1)
+                    iconesDasSementes[i].enabled = true;
+                }
+                else
+                {
+                    // Fallback: Se esqueceu o ícone, usa a cor antiga
+                    iconesDasSementes[i].sprite = null; 
+                    iconesDasSementes[i].color = sementes[i].corMadura;
+                }
             }
             else
             {

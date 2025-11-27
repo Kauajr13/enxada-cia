@@ -9,6 +9,16 @@
     "/home/jiraiya23/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "displayName": "2D Sprite",
+      "resolvedPath": "/home/jiraiya23/Área de Trabalho/Unity/enxada-cia/Enxada_e_cia/Library/PackageCache/com.unity.2d.sprite@40af95610cd4",
+      "fingerprint": "40af95610cd42dda7036338d3ab9e05b8e1f731e",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.collab-proxy@2.10.0": {
       "name": "com.unity.collab-proxy",
       "displayName": "Unity Version Control",
